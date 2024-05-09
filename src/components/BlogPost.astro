@@ -1,0 +1,10 @@
+---
+const { url, title } = Astro.props;
+---
+<li><slot /><a href={url}>{title}</a></li>
+
+<style>
+  a {
+    margin-left: 5px;
+  }
+</style>
